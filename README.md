@@ -7,6 +7,7 @@ This page is a brief description of my setup which aimed to be affordable but de
 
 TL;DR - heat management is a real issue on home gear, the number of PCI lanes seriously affects training time on small mini batches (n <= 64). 3 cards is only marginally better than 2. 2 cards are better than 1.
 
+## Equipment ##
 Base equipment (purchased 2015):
 * GIGABYTE GA-X99-UD3P motherboard (supports 40 pci lanes)
 * Intel Core i7-5930K Haswell-E 6-Core 3.5 GHz LGA 2011 (40 pci lanes)
