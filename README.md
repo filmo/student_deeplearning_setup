@@ -45,8 +45,8 @@ Test # | Setup | Seconds per Epoch
 Test 1 |1 GTX-1070 in 16x PCI slot| 155.8 seconds
 Test 2 |1 GTX-1070 in 16x, 1 GTX-980ti in 16x| 102.26 seconds
 Test 3 |2 GTX-1070s both in 16x slots | 106.17 seconds
-Test 4 |2 GPUs 1070 & 1 GTX-980ti, all in 8x PCI  | 103.1 seconds. 
-Test 5 |2 GPUs 1070 (8x), 1 GTX-980ti (8x not used),|118.05 seconds
+Test 4 |2 GPUs 1070 & 1 GTX-980ti, all @ 8x PCI  | 103.1 seconds. 
+Test 5 |2 GTX-1070s in 8x slots|118.05 seconds
 
 Test 1 shows the performance of a single GTX-1070 in a 16 lane PCI slot.
 
@@ -97,4 +97,6 @@ I realize this is kind of sloppy testing. It was originally just for my own curi
 
 That said, my conculsions are: Two Card is probably thw sweet spot for reducing training time if you're working on something where data-parallelism can be applied. The Addition of a 3rd (in my case) didn't seem to add much and had a negative effect on the thermal load on the cards. 
 
-It was also interesting to see the effects of running on 16x PCI lanes vs 8x PCI lanes. Using consumer gear, you will end up in an '8x' situation as soon as you move to 3 or 4 cards. This had a performance impact when using small batch sizes.
+I think two GTX-1070s is probably a better deal than one GTX-1080. From what I've read the GTX-1080 is about 25% faster than the 1070. With data parallelism, two 1070s would likely be faster than one 1080 on most work loads.
+
+It was also interesting to see the effects of running on 16x PCI lanes vs 8x PCI lanes. Using consumer gear, you will end up in an '8x' situation as soon as you move to 3 or 4 cards. This had a performance impact when using small batch sizes. It's possble, that I could have removed the GT-730 and place two GPUs in 16x slots and had only the thrid in an 8x slot. I didn't test this.
