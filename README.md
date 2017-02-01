@@ -1,4 +1,4 @@
-# student deeplearning setup
+# student deep learning setup - GTX-1070s & GTX-980ti #
 Deep Learning Setup for Student or on a Budget
 
 I'm studying machine learning at [The George Tech](http://www.cc.gatech.edu/). In my free time I also play around with trying to reproduce various deep learning papers.
