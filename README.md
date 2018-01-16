@@ -61,6 +61,7 @@ Interesting Notes: At least on my motherboard/CPU combination, running small bat
 Also Test 5 seems to illustrate the performance penalty of small batch sizes relative to bus speed. The two 1070s running at 16x was definitely faster than when they were forced to operate at 8x.
 
 #Batch Size = 128#
+
 Test # | Setup | Seconds per Epoch
 -------|------|--------
 Test 1|1 GTX-1070 in 16x|148.49 seconds
@@ -72,6 +73,7 @@ Test 5|2 GTX-1070s in 8x slots| 97 seconds
 With a larger batch size, we start to see the benefits of the 3rd card in Test 4. Test 2 and Test 5 reflect the performance difference between having 2 cards at 16x vs 2 cards at 8x PCI.
 
 #Batch Size = 256#
+
 Test # | Setup | Seconds per Epoch
 -------|------|--------
 Test 1|1 GTX-1070 in 16x |165.0 seconds 
